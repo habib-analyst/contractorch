@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contractorch"
+version = "0.1.0"
+description = "Orchestrate LLM tools by contract, not by vibes — PDDL-style preconditions/effects with provably-safe parallelization"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Habib Ur Rehman" }]
+keywords = ["agents", "orchestration", "planning", "contracts", "parallelism", "llm-tools"]
+dependencies = ["pydantic>=2.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/contractorch"
+
+[tool.setuptools.packages.find]
+where = ["src"]
